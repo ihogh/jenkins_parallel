@@ -1,3 +1,3 @@
 #!/bin/bash
 lscpu
-sudo saystemctl status jenkins
+sudo systemctl status jenkins
