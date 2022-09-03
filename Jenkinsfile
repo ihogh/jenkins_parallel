@@ -10,7 +10,7 @@ pipeline{
       parallel{
         stage('Phil-actions'){
           steps{
-            sh './phil_jkp.sh'
+            sh 'phil_jkp.sh'
           }
         }
         stage('Abisola-actions2'){
