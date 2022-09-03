@@ -10,8 +10,8 @@ pipeline{
       parallel{
         stage('Phil-actions'){
           steps{
-            sh '/var/lib/jenkins/workspace/jenkins_parallel
-                /phil_jkp.sh'
+            sh '''/var/lib/jenkins/workspace/jenkins_parallel
+                /phil_jkp.sh'''
                       }
         }
         stage('Abisola-actions2'){
