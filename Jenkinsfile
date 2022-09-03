@@ -10,9 +10,8 @@ pipeline{
       parallel{
         stage('Phil-actions'){
           steps{
-            sh 'lscpu'
-            sh 'sudo systemctl status jenkins'
-          }
+            sh 'phil_jkp.sh'
+                      }
         }
         stage('Abisola-actions2'){
           steps{
