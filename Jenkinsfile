@@ -1,7 +1,7 @@
 pipeline{
   agent {
     label {
-      label 'slave1
+      label 'slave1'
       }
     }
   stages{
@@ -70,7 +70,7 @@ pipeline{
     stage('5-fifth parallel job'){
        agent {
     label {
-      label 'slave2
+      label 'slave2'
       }
     }
       parallel{
