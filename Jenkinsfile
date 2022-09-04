@@ -14,7 +14,7 @@ pipeline{
       parallel{
         stage('Phil-actions'){
           steps{
-            sh 'bash -x /var/lib/jenkins/workspace/jenkins_parallel/phil_jkp.sh'
+            sh ' echo "bash -x /var/lib/jenkins/workspace/jenkins_parallel/phil_jkp.sh"'
                       }
         }
         stage('Abisola-actions2'){
