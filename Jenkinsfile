@@ -68,13 +68,13 @@ pipeline{
       }
     }
     stage('5-fifth parallel job'){      
-      parallel{ 
-        agent {
+      parallel{       
+        stage('engr1-action'){
+            agent {
     label {
       label 'slave2'
       }
     }
-        stage('engr1-action'){
           steps{
             sh 'echo "thank you"'
           }
